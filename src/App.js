@@ -1,17 +1,23 @@
-import React from "react";
-import Home from "./routes/Home";
-import Reservations from "./routes/Reservations";
-
-import {Route, Routes} from "react-router-dom";
+import React from 'react';
+import Navbar from './components/Navbar';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path = "/" element = {<Home />}/>
-        <Route path = "/reservations" element = {<Reservations />}/>
-      </Routes>
-    </>
+    <div className="container">
+      <nav>
+      <Navbar/>
+      </nav>
+    
+    <main>
+        
+    </main>
+    <footer className='footer'>
+      <p>This Restaurant website is created by Srivatsan S</p>
+      <p><i class="fa fa-envelope" style={{"font-size":"24px"}}></i> srivatsangsm2000@gmail.com</p>
+      <p>Copyright @ Srivatsan 2023</p>
+    </footer>
+    </div>
   );
 }
 
